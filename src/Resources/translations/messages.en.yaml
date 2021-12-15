@@ -15,6 +15,10 @@ odiseo_sylius_vendor_plugin:
         vendor:
             slug: Slug
             email: Email
+            phone: Phone
+            alt_phone: Alternative Phone
+            lat: Latitude
+            lon: Longitude
             translations: Translations
             description: Description
             logo: Logo

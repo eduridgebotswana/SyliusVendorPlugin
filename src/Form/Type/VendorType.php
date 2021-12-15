@@ -33,6 +33,18 @@ final class VendorType extends AbstractResourceType
             ->add('enabled', CheckboxType::class, [
                 'label' => 'sylius.ui.enabled',
             ])
+            ->add('phone', TextType::class, [
+                'label' => 'odiseo_sylius_vendor_plugin.form.vendor.phone',
+            ])
+            ->add('altPhone', TextType::class, [
+                'label' => 'odiseo_sylius_vendor_plugin.form.vendor.alt_phone',
+            ])
+            ->add('lat', NumberType::class, [
+                'label' => 'odiseo_sylius_vendor_plugin.form.vendor.lat',
+            ])
+            ->add('lon', NumberType::class, [
+                'label' => 'odiseo_sylius_vendor_plugin.form.vendor.lon',
+            ])
             ->add('translations', ResourceTranslationsType::class, [
                 'entry_type' => VendorTranslationType::class,
                 'label' => 'odiseo_sylius_vendor_plugin.form.vendor.translations',

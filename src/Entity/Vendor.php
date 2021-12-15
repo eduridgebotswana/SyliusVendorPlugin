@@ -30,6 +30,10 @@ class Vendor implements VendorInterface
     protected ?File $logoFile = null;
     protected ?string $logoName = null;
     protected ?int $position = null;
+    protected ?string $phone = null;
+    protected ?string $altPhone = null;
+    protected ?float $lat = 0.0;
+    protected ?float $lon = 0.0;
 
     /**
      * @psalm-var Collection<array-key, ChannelInterface>
@@ -233,4 +237,70 @@ class Vendor implements VendorInterface
     {
         return new VendorTranslation();
     }
+
+    /**
+     * @return string|null
+     */
+    public function getPhone(): ?string
+    {
+        return $this->phone;
+    }
+
+    /**
+     * @param string|null $phone
+     */
+    public function setPhone(?string $phone): void
+    {
+        $this->phone = $phone;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getAltPhone(): ?string
+    {
+        return $this->altPhone;
+    }
+
+    /**
+     * @param string|null $altPhone
+     */
+    public function setAltPhone(?string $altPhone): void
+    {
+        $this->altPhone = $altPhone;
+    }
+
+    /**
+     * @return float|null
+     */
+    public function getLat(): ?float
+    {
+        return $this->lat;
+    }
+
+    /**
+     * @param float|null $lat
+     */
+    public function setLat(?float $lat): void
+    {
+        $this->lat = $lat;
+    }
+
+    /**
+     * @return float|null
+     */
+    public function getLon(): ?float
+    {
+        return $this->lon;
+    }
+
+    /**
+     * @param float|null $lon
+     */
+    public function setLon(?float $lon): void
+    {
+        $this->lon = $lon;
+    }
+
+
 }

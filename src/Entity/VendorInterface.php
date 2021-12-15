@@ -27,6 +27,22 @@ interface VendorInterface extends
 
     public function setName(?string $name): void;
 
+    public function getPhone(): ?string;
+
+    public function setPhone(?string $name): void;
+
+    public function getAltPhone(): ?string;
+
+    public function setAltPhone(?string $name): void;
+
+    public function getLat(): ?float;
+
+    public function setLat(?float $lat): void;
+
+    public function getLon(): ?float;
+
+    public function setLon(?float $lon): void;
+
     public function getEmail(): ?string;
 
     public function setEmail(?string $email): void;
